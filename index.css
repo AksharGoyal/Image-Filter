@@ -1,0 +1,169 @@
+:root {
+  --theme:#007bff;
+}
+
+*, *::before, *::after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    height: 100vh;
+    background-color: #ddf;
+    max-width: 100%;
+    margin:0;
+  }
+
+  .banner {
+    background-color: var(--theme, #007bff); /* Change the background color as desired */
+    width:100%;
+    height: 12vh;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    padding: 15px;
+    background-image: url('./images/website-banner-lightblue.png');
+    /* object-fit: fill; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: filter 2s, transform 2s;
+    z-index: 1;
+}
+
+.banner > h1 {
+  /* position: absolute;
+  top:0; */
+  background-image: url('./images/website-banner.png');
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-position: top left;
+  color:transparent;
+  text-align: center;
+} 
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+  /* width:100%; */
+}
+
+.custom-file-upload {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--theme, #007bff); /* Button background color */
+  color: #fff; /* Text color */
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Hover effect */
+.custom-file-upload:hover {
+  background-color: #0056b3; /* Change the background color on hover */
+}
+
+/* Click effect */
+.custom-file-upload:active {
+  background-color: #003c80; /* Change the background color on click */
+}
+
+/* Hide the default file input */
+#image-input {
+  display: none;
+}
+
+.image-title {
+  color: var(--theme, #007bff); /* Text color for the selected file name */
+  font-weight: bold;
+  margin-top: 1vh;
+}
+
+.display-image {
+  display:none;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin:2.5% 0;
+}
+
+.display-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; 
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+.uploaded-file {
+  display: flex;
+  flex-direction: column;
+  padding: 1vh 2.5vw;
+  transition: filter 0.5s, transform 0.5s;
+}
+
+#preview-image {
+  transition: filter 2s, transform 2s;
+}
+
+/* Style the dropdown */
+#image-action {
+  padding: 5px; /* Add padding to the select for spacing */
+  font-size: 16px; /* Customize font size */
+  border: 1px solid #ccc; /* Add a border */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  background-color: #eef; /* Background color */
+  color: #333; /* Text color */
+  width: 20%; /* Set a fixed width or adjust as needed */
+}
+
+/* Style the dropdown arrow (optional) */
+#image-action::-ms-expand,
+#image-action::-webkit-select-placeholder {
+  display: none; /* Hide the default dropdown arrow on some browsers */
+}
+
+/* Style the options */
+#image-action option {
+  background-color: #eef; /* Background color for options */
+  color: #333; /* Text color for options */
+  padding: 5px; /* Add padding to the options for spacing */
+  font-size: 14px; /* Customize font size for options */
+}
+
+/* Style the selected option */
+#image-action option:checked {
+  background-color: var(--theme, #007bff); /* Background color for the selected option */
+  color: #eef; /* Text color for the selected option */
+  font-weight: bold; /* Make the selected option bold */
+}
+
+.note {
+  color: var(--theme, #007bff);
+  padding: 0.5vh;
+}
+
+  /* .blur {
+    -webkit-filter: blur(8px);
+    filter: blur(8px);
+  }
+
+  .horizontal-flip {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+
+  .vertical-flip {
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+  }
+
+  .grayscale {
+  -webkit-filter: grayscale(100%); 
+  filter: grayscale(100%);
+  } */
