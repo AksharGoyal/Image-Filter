@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Image Filter</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="banner">
+            <h1>Image Filter</h1>
+        </div>
+        <div class="input-container">
+            <label for="image-input" class="custom-file-upload">
+                <span>Upload Image</span>
+            </label>
+            <input type="file" id="image-input" accept="image/*">
+        </div>
+        <div class="display-image">
+            <div class="display-images">
+                <div class="uploaded-file">
+                    <img id="new-image" src="" width="200" height="auto" alt="Modified Image" loading="lazy">
+                    <span id="selected-file" class="image-title"></span>
+                </div>
+                <div class="uploaded-file">
+                    <img id="preview-image" src="" width="200" height="auto" alt="Uploaded Image" loading="lazy">
+                    <span class="image-title">MODIFIED IMAGE</span>
+                </div>
+            </div>
+            <label for="image-action" class="image-title" style="padding: 0.5%; margin-top: 0;">Choose a filter for your image</label> 
+            <select name="image-action" id="image-action"> 
+                <option value="none">None (Reset)</option> 
+                <option value="blur">Blur</option> 
+                <option value="vertical-flip">Vertical Flip</option> 
+                <option value="horizontal-flip">Horizontal Flip</option> 
+                <option value="grayscale">Black and White</option> 
+            </select>
+            <p class="note"><u>Note</u>: You can remove a filter by clicking on another option or on <b>None</b>.</p>
+        </div>
+        <script src="index.js" async defer></script>
+    </body>
+</html>
