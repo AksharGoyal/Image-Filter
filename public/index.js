@@ -1,7 +1,7 @@
 /* CLASS CONSTRUCTION */
 class MyImage {
     constructor(image) {
-        // used for initialising the object
+        // used for initialising the object 
         this.image = image;
     }
     filterImage(filterStyle) {

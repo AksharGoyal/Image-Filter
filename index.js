@@ -96,7 +96,7 @@ formResults.addEventListener('change', (event) => { // listens to dropdown value
     const newImage = new MyImage(previewImage); // creates MyImage object
     /* SWITCH BLOCK */
     switch (imageModifier) { // takes the value in switch expression
-        case 'grayscale':
+        case 'grayscale': 
             newImage.filterImage('grayscale(100%)') // turn image into black and white
             break;
         case 'blur':
